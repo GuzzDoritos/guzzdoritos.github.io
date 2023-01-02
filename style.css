@@ -110,6 +110,30 @@ h2 {
     padding-left: 10px;
 }
 
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottomright {
+    display: flex;
+}
+
+#bottomleft{
+    display: flex;
+}
+
+.corner {
+    background-color: rgba(0, 0, 0, .8);
+    max-width: fit-content;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: small;
+}
+
 @media (max-width:600px) {
     .container {
         margin: auto;
@@ -136,8 +160,10 @@ h2 {
         font-size: large;
     }
 
-    #bottomright {
-        margin-top: 10px;
+    .corner {
+        max-width: 100%;
+        border-radius: 5px;
+        align-self: center;
     }
 }
 
@@ -148,33 +174,43 @@ h2 {
 }
 
 @media (min-height:806px) {
-    html {
+    html{
         display: flex;
         flex-wrap: wrap;
         height: 100%;
         align-content: center;
         justify-content: center;
+        font-size: 23px;
     }
 
-    #bottomright {
+    .bottom {
+        width: 100%;
         position: fixed;
         bottom: 0;
         right: 0;
     }
+
+    .corner {
+        font-size: 20px;
+    }
 }
 
-#bottomright {
-    display: flex;
-    justify-content: end;
+#generate:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-#corner {
-    background-color: rgba(0, 0, 0, .5);
-    max-width: fit-content;
-    margin: 0;
-    padding: 5px;
-    border-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    font-size: small;
+@media (min-height:2160px) {
+    html{
+        font-size: 40px;
+    }
+
+    .container {
+        max-width: 1600px;
+    }
+
+    .corner {
+        font-size: 40px;
+    }
 }
+
