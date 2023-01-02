@@ -13,16 +13,20 @@ html {
     background-attachment: fixed;
     background-image: url("wallpaper.jpg");
     background-repeat: no-repeat;
+    font-family: VisbyRound;
+    color: #ffbfcc;
 }
 
 body {
+    margin: 0;
+}
+
+.container {
     max-width: 800px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
-    font-family: VisbyRound;
-    color: #ffbfcc;
     background-color: rgba(0,0,0,.5);
     border-radius: 10px;
 }
@@ -103,9 +107,11 @@ h1, h2 {
 }
 
 @media (max-width:600px) {
-    body {
+    .container {
         margin: auto;
         border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     
     html {
@@ -125,10 +131,30 @@ h1, h2 {
     #headinglogo {
         font-size: large;
     }
+
+    #bottomright {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width:327px) {
     #headinglogo {
         margin: 0;
     }
+}
+
+#bottomright {
+    display: flex;
+    justify-content: end;
+}
+
+#corner {
+    background-color: rgba(0,0,0,.5);
+    max-width: fit-content;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: small;
 }
