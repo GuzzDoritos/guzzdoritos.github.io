@@ -17,33 +17,20 @@ span.onclick = function () {
   modal.style.display = "none";
 }
 
-const generateQuote = function () {
-  const quotes = [
-    {
-      quote: "You fool! German science is the greatest in the world!"
-    },
-    {
-      quote: "Never tell me the odds!"
-    },
-    {
-      quote: "Wario time!"
-    },
-    {
-      quote: "wanna be the cookie"
-    },
-    {
-      quote: "The ability to speak does not make you intelligent."
-    },
-    {
-      quote: "Sorry lady. I don’t understand frog."
-    }
-  ]; 
-  
-  let arrayIndex = Math.floor(Math.random() * quotes.length);
-  document.getElementById("quotes").innerHTML = quotes[arrayIndex].quote;
-}
+function newQuote() { 
+  quotes = [
+  "You fool! German science is the greatest in the world!",
+  "Never tell me the odds!",
+  "Wario time!",
+  "wanna be the cookie",
+  "The ability to speak does not make you intelligent.",
+  "Sorry lady. I don’t understand frog.",
+  "ゆっくりしていってね！！！"
+];
+var randomNumber = Math.floor(Math.random() * (quotes.length));
+document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
+} 
 
-window.onload = function () {
-  generateQuote();
-  document.getElementById("generate").addEventListener('click', generateQuote);
+window.onload = function() {
+  newQuote();
 }
