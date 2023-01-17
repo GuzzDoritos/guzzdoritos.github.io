@@ -26,24 +26,24 @@
     width: 50%;
 }
 
+#welcome-image img {
+    max-width: 80%;
+}
+
 #welcome {
-    display: flex;
-    justify-items: right;
     width: 60%;
     margin: 50px;
+    font-size: 3em;
 }
 
 #projects-breaker {
-    display: flex;
     background-color: #4f3449;
     color: white;
     padding: 30px;
-    align-items: center;
     letter-spacing: 0.5em;
 }
 
 .projects-container {
-    display: block;
     position: relative;
     background-color: #4f3449;
 }
@@ -62,10 +62,10 @@
     justify-content: center;
 }
 
-img {
-    max-height: 100%;
-    max-width: 50%;
+.box img {
+    max-width: 80%;
 }
+
 
 #what {
     display: flex;
@@ -78,4 +78,10 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 3em;
+}
+
+@media (max-width: 730px) {
+    #welcome {
+        font-size: 1em;
+    }
 }

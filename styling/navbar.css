@@ -20,3 +20,9 @@
 #logo {
     padding: 20px;
 }
+
+@media (max-width: 450px) {
+    .navbar-right {
+        display: none;
+    }
+}
