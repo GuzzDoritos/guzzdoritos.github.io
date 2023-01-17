@@ -1,107 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guzz' Guzzing Zone</title>
-    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="popup.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling/main.css">
+    <link rel="stylesheet" href="styling/navbar.css">
+    <link rel="stylesheet" href="styling/footer.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <nav class="headerlogo">
-                <img class="logo" src="logo.svg" alt="kirby">
-                <h1 id="headinglogo">Guzz' Guzzing Zone</h1>
-            </nav>
-            <h3><em>Let the guzzening commence</em></h3>
-        </header>
-        <div class="flexbox">
-            <div class="welcome">
-                <div class="hnav">
-                    <h2>welcome!</h2>
-                </div>
-                <p>
-                    Hello there, weary traveler. I see you've stumbled on my humble cave-settled
-                    wood house. Please do make yourself at home and enjoy its awesome water dripping
-                    vistas.
-                </p>
-
-                <p>
-                    Once a wise man said: <em id="quoteDisplay"></em> <span onclick="newQuote()" id="generate">🔁</span>
-                </p>
-
-                <p>
-                    I hope you like coffee. ☕
-                </p>
-            </div>
-            <div class="updates">
-                <nav class="hnav">
-                    <h2>site updates</h2>
-                </nav>
-                <ul>
-                    <li><b>2023/01/01</b></li>
-                    <ul>
-                        <li>Created the site.</li>
-                    </ul>
-                    <li><b>2023/01/02</b></li>
-                    <ul>
-                        <li>Improved responsiveness</li>
-                        <li>Added a little modal</li>
-                        <li>Added random quote generator</li>
-                    </ul>
-                </ul>
-            </div>
+    <div class="navbar">
+        <div class="navbar-left">
+            <h1 id="logo">guzzy</h1>
+            <div>Home</div>
+            <div>Articles</div>
         </div>
-        <div class="contact">
-            <div class="hnav">
-                <h2>contact me</h2>
-            </div>
-            <p>Over on these lovely places you may attempt establishing a connection
-                with me. Rest in mind I might not be available at all times, though.
-            </p>
-            <ul>
-                <li><b>Discord: </b>Guzz#8476</li>
-                <li><a href="https://www.twitter.com/GuzzDoritos"><b>Twitter: </b>@GuzzDoritos</a></li>
-                <li><a href="https://github.com/GuzzDoritos"><b>GitHub: </b>GuzzDoritos</a></li>
-                <li><a href="https://steamcommunity.com/id/guzzdoritos/"><b>Steam: </b>guzzdoritos</a></li>
-                <li><a href="https://www.youtube.com/channel/UCyFR6N4zUtmCsyLTnhVo9fg"><b>Youtube:
-                        </b>@guzzdoritos4708</a></li>
-            </ul>
+        <div class="navbar-right">
+            <div><a href="#">D</a></div>
+            <div><a href="#">T</a></div>
+            <div><a href="#">Y</a></div>
         </div>
-        <footer>© 2023 Gustavo Bragada</footer>
     </div>
-    <div class="bottom">
-        <div id="bottomright">
-            <p class="corner">
-                layout inspired by <a href="https://fluxie.gay/">roxie's website.</a> lov u bestie
-            </p>
-        </div>
-
-        <div class="corner" id="bottomleft">
-            <div id="myBtn" style="color: bisque;">what the hay is this site's purpose?</div>
-        </div>
-
-        <div id="myModal" class="modal">
-
-            <div class="modal-content fadeIn">
-                <h1>Learning!</h1>
-                <p>Mainly built for entertainment and HTML/CSS/JS studying and practice. Reason 
-                    as to why most of the texts are weird is... I didn't have much idea on what to put there
-                    heh. Anyways, I hope you enjoyed the overall design since it was built with much love!
-                </p>
-                <button class="close"><b>Epic!</b></button>
+    <div class="welcome-container">
+        <div id="welcome-image"><img src="img/kirby.png" alt="lilttle kirby guy"></div>
+        <div id="welcome" style="font-size: 3em;"><h1>Welcome there, weary traveler.</h1></div>
+    </div>
+    <div id="projects-breaker">
+        <h2>MY PROJECTS</h2>
+    </div>
+    <div class="projects-container">
+        <div class="row">
+            <div class="box">
+                <img src="img/moyai.svg" alt="bitch">
             </div>
-
+            <div class="box">
+                <img src="img/moyai.svg" alt="bitch">
+            </div>
         </div>
-        
-        <script src="script.js"></script>
-
+        <div class="row">
+            <div class="box">
+                <img src="img/moyai.svg" alt="bitch">
+            </div>
+            <div class="box">
+                <img src="img/moyai.svg" alt="bitch">
+            </div>
+        </div>
+        <p id="what">Except I ain't got any 🗿</p>
     </div>
 </body>
-
 </html>
